@@ -1,0 +1,939 @@
+body {
+    background-color: #cccccc;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#welcome-title {
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100px;
+    color: black;
+    margin-bottom: 1px;
+}
+
+.secenek {
+    display: flex;
+    justify-content: center;
+}
+
+.ana-yon {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 330px;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.lang-bar {
+    text-align: right;
+    padding: 30px;
+}
+
+#dil-bar {
+    border-radius: 7px;
+    background-color: rgb(153, 153, 153);
+    box-shadow: 0px 0px 4.55px 0.45px rgba(51, 51, 51, 0.65);
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-family: "PP Neue World", sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 2px 4.55px rgba(102, 102, 102, 0.65);
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.isim {
+    text-align: center;
+    font-family: 'Sudestada', cursive;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+main {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    flex: 1;
+    min-height: 0;
+    margin-bottom: 100px;
+}
+
+.baslik {
+    font-size: 50px;
+    font-family: "Fjalla One";
+    color: rgb(0, 0, 0);
+    line-height: 1;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hakkimda {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.hakkimda strong {
+    font-weight: bold;
+}
+
+.kategori-sayfasi {
+    justify-content: center;
+    position: relative; 
+}
+
+.merkez-alan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.kategori-baslik {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 70px;
+    color: black;
+    margin-bottom: 40px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.buton-grubu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.kat-btn {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 24px;
+    color: black;
+    background-color: rgb(179, 179, 179);
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.kat-btn:hover {
+    background-color: rgb(150, 150, 150);
+    transform: scale(1.05);
+}
+
+.sol-alt-menu {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.sol-ana-sayfa {
+    font-size: 20px;
+    font-family: "PP Neue World", 'Times New Roman', serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 7px;
+    background-color: rgb(153, 153, 153);
+    box-shadow: 0px 0px 4.55px 0.45px rgba(51, 51, 51, 0.65);
+    transition: opacity 0.3s;
+}
+
+.sol-ana-sayfa:hover {
+    opacity: 0.8;
+}
+
+.sag-alt-menu {
+    position: absolute;
+    bottom: 40px;
+    right: 40px; 
+}
+
+.sag-hakkimda {
+    font-size: 20px;
+    font-family: "PP Neue World", 'Times New Roman', serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 7px;
+    background-color: rgb(153, 153, 153);
+    box-shadow: 0px 0px 4.55px 0.45px rgba(51, 51, 51, 0.65);
+    transition: opacity 0.3s;
+}
+
+.sag-hakkimda:hover {
+    opacity: 0.8;
+}
+
+.pdf-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    flex: 1;
+    min-height: 0; 
+}
+
+.pdf-box {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    position: relative; 
+}
+
+.pdf-box iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.ana-sayfa {
+    font-size: 24px;
+    font-family: "PP Neue World";
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 7px;
+    background-color: rgb(153, 153, 153);
+    box-shadow: 0px 0px 4.55px 0.45px rgba(51, 51, 51, 0.65);
+}
+
+.tek-video-alani {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+}
+
+.tek-video-alani video {
+    width: 100%;
+    height: 100%;
+    max-height: 55vh;
+    object-fit: contain; 
+}
+
+.yerellestirme-ozel {
+    align-items: start;
+}
+
+.yerellestirme-ozel .pdf-box {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+.tam-ekran-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgb(153, 153, 153);
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.tam-ekran-icon:hover {
+    background-color: rgb(100, 100, 100); 
+    transform: scale(1.1);
+}
+
+.sabit-menu-kapsayici {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.sabit-menu-ikonu {
+    color: #000000;
+    cursor: pointer;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+.acilir-menu {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: rgb(153, 153, 153);
+    box-shadow: 0px -4px 6px rgba(0,0,0,0.3); 
+    border-radius: 7px;
+    overflow: hidden;
+    min-width: 160px;
+    text-align: center;
+}
+
+.acilir-menu a {
+    font-family: "PP Neue World", 'Times New Roman', serif;
+    color: #ffffff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    transition: background-color 0.2s;
+}
+
+.acilir-menu a:last-child {
+    border-bottom: none;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px 30px 40px;
+}
+
+.arrow-btn {
+    font-size: 3.5rem; 
+    color: #000000;
+    text-decoration: none;
+    line-height: 1;
+    transition: opacity 0.3s ease;
+}
+
+.arrow-btn:hover {
+    opacity: 0.5;
+}
+
+body.hakkimda-sayfasi-yeni {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important; 
+    min-height: 100vh; 
+    overflow-y: auto !important; 
+    margin: 0;
+}
+
+body.hakkimda-sayfasi-yeni main {
+    flex: 1; 
+    display: block !important; 
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+body.hakkimda-sayfasi-yeni .menu {
+    width: 100%;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sayfa-icerik-alani {
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto; 
+    text-align: left;
+}
+
+.sayfa-icerik-alani .baslik {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sayfa-icerik-alani p.hakkimda {
+    margin-bottom: 60px;
+    line-height: 1.5;
+}
+
+.cv-merkez {
+    width: 100%;
+}
+
+.cv-baslik {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 32px; 
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.cv-alt-baslik {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 24px; 
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.cv-kutu {
+    background-color: #ffffff;
+    padding: 18px 22px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.cv-kutu strong {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: normal;
+}
+
+.cv-kutu p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    color: #000;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.cv-izgara {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.cv-yetenek {
+    background-color: #ffffff;
+    padding: 14px 20px;
+    border-radius: 6px;
+}
+
+.cv-yetenek span {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 22px;
+    color: #000;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.yildizlar {
+    display: flex;
+    gap: 4px; 
+    align-items: center; 
+}
+
+.dolu-yildiz, .bos-yildiz {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dolu-yildiz {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FFC55C' stroke='%23FFC55C' stroke-width='1.5' stroke-linejoin='round'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E");
+}
+
+.bos-yildiz {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='1.5' stroke-linejoin='round'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E");
+}
+
+body.hakkimda-sayfasi-yeni .menu {
+    width: 100%;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: relative;
+} 
+
+.menu-orta-ikonlar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.sadece-ikon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sadece-ikon:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+.iletisim-ikon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mail-ikon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'/%3E%3Cpolyline points='22,6 12,13 2,6'/%3E%3C/svg%3E");
+}
+
+.linkedin-ikon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z'/%3E%3Crect x='2' y='9' width='4' height='12'/%3E%3Ccircle cx='4' cy='4' r='2'/%3E%3C/svg%3E");
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    min-width: 0;
+}
+
+.container {
+    width: min(90%, 1200px);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 769px) {
+    main.container {
+        width: min(90%, 1200px);
+    }
+
+    .pdf-grid {
+        width: 100%;
+    }
+
+    .tek-video-alani {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        min-height: 100vh;
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #welcome-title {
+        font-size: clamp(56px, 15vw, 90px);
+        line-height: 1;
+        margin: 0 0 20px;
+        padding: 0 15px;
+    }
+
+    .lang-bar {
+        padding: 20px;
+    }
+
+    #dil-bar {
+        width: 90px;
+        height: 32px;
+        font-size: 17px;
+    }
+
+    main {
+        width: 90%;
+        max-width: 1200px;
+        margin-bottom: 40px;
+    }
+
+    .secenek {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ana-yon {
+        width: min(330px, 90vw);
+        height: auto;
+        padding: 12px 15px;
+        font-size: 20px;
+    }
+
+    .isim {
+        font-size: 24px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+    }
+
+    .kategori-sayfasi {
+        min-height: 100vh;
+        height: auto;
+        overflow-y: auto;
+    }
+
+    .merkez-alan {
+        width: 90%;
+        min-height: 100vh;
+        padding: 70px 0 120px;
+    }
+
+    .kategori-baslik {
+        font-size: clamp(48px, 13vw, 70px);
+        text-align: center;
+        margin: 0 0 30px;
+        line-height: 1;
+    }
+
+    .buton-grubu {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .kat-btn {
+        width: min(420px, 100%);
+        text-align: center;
+        font-size: 21px;
+        padding: 13px 18px;
+    }
+
+    .sol-alt-menu,
+    .sag-alt-menu {
+        bottom: 20px;
+    }
+
+    .sol-alt-menu {
+        left: 20px;
+    }
+
+    .sag-alt-menu {
+        right: 20px;
+    }
+
+    .sol-ana-sayfa,
+    .sag-hakkimda {
+        font-size: 17px;
+        padding: 7px 12px;
+    }
+
+    main.container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto 20px;
+        min-height: 0;
+        flex: none;
+    }
+
+    .baslik {
+        font-size: clamp(38px, 10vw, 50px);
+        line-height: 1.05;
+        margin-top: 20px;
+        margin-bottom: 18px;
+    }
+
+    .hakkimda {
+        font-size: 18px;
+        line-height: 1.45;
+        margin-bottom: 25px;
+    }
+
+    .pdf-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        flex: none;
+    }
+
+    .pdf-box {
+        width: 100%;
+        height: 70vh;
+        min-height: 420px;
+        flex: none;
+    }
+
+    .pdf-box iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .yerellestirme-ozel .pdf-box {
+        width: 100%;
+        height: 70vh;
+        min-height: 420px;
+        aspect-ratio: auto;
+    }
+
+    .tek-video-alani {
+        width: 100%;
+        flex: none;
+    }
+
+    .tek-video-alani video {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        display: block;
+        object-fit: contain;
+    }
+
+    .bottom-nav {
+        width: 100%;
+        padding: 10px 20px 20px;
+    }
+
+    .arrow-btn {
+        font-size: 3rem;
+        padding: 5px 10px;
+    }
+
+    .sabit-menu-kapsayici {
+        bottom: 18px;
+    }
+
+    .sabit-menu-ikonu svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .tam-ekran-icon {
+        bottom: 12px;
+        right: 12px;
+        width: 38px;
+        height: 38px;
+    }
+
+    body.hakkimda-sayfasi-yeni {
+        min-height: 100vh;
+        height: auto !important;
+        overflow-x: hidden;
+        overflow-y: auto !important;
+    }
+
+    body.hakkimda-sayfasi-yeni main {
+        width: 100%;
+        padding: 30px 0 30px;
+        flex: none;
+    }
+
+    .sayfa-icerik-alani {
+        width: 90%;
+        max-width: 850px;
+    }
+
+    .sayfa-icerik-alani .baslik {
+        margin-bottom: 25px;
+    }
+
+    .sayfa-icerik-alani p.hakkimda {
+        margin-bottom: 40px;
+    }
+
+    .cv-baslik {
+        font-size: 29px;
+        margin-top: 25px;
+    }
+
+    .cv-alt-baslik {
+        font-size: 22px;
+        margin-top: 25px;
+    }
+
+    .cv-kutu {
+        padding: 16px 18px;
+    }
+
+    .cv-kutu strong {
+        font-size: 21px;
+    }
+
+    .cv-kutu p {
+        font-size: 18px;
+        line-height: 1.35;
+    }
+
+    .cv-izgara {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .cv-yetenek {
+        padding: 13px 17px;
+    }
+
+    .cv-yetenek span {
+        font-size: 20px;
+    }
+
+    body.hakkimda-sayfasi-yeni .menu {
+        padding: 20px;
+        min-height: 80px;
+        gap: 15px;
+    }
+
+    .menu-orta-ikonlar {
+        position: static;
+        transform: none;
+        order: 2;
+        gap: 10px;
+    }
+
+    body.hakkimda-sayfasi-yeni .menu > .ana-sayfa:first-child {
+        order: 1;
+    }
+
+    body.hakkimda-sayfasi-yeni .menu > .ana-sayfa:last-child {
+        order: 3;
+    }
+
+    .sadece-ikon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .iletisim-ikon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lang-bar {
+        padding: 15px;
+    }
+
+    #welcome-title {
+        font-size: clamp(46px, 16vw, 70px);
+    }
+
+    .ana-yon {
+        font-size: 18px;
+    }
+
+    .isim {
+        font-size: 22px;
+    }
+
+    .merkez-alan {
+        padding-top: 55px;
+    }
+
+    .kategori-baslik {
+        font-size: 46px;
+    }
+
+    .kat-btn {
+        font-size: 19px;
+    }
+
+    .sol-alt-menu {
+        left: 12px;
+    }
+
+    .sag-alt-menu {
+        right: 12px;
+    }
+
+    .sol-ana-sayfa,
+    .sag-hakkimda {
+        font-size: 15px;
+        padding: 6px 10px;
+    }
+
+    .pdf-box,
+    .yerellestirme-ozel .pdf-box {
+        height: 62vh;
+        min-height: 360px;
+    }
+
+    .hakkimda {
+        font-size: 17px;
+    }
+
+    .bottom-nav {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .arrow-btn {
+        font-size: 2.7rem;
+    }
+
+    body.hakkimda-sayfasi-yeni .menu {
+        padding: 18px 12px;
+    }
+
+    .menu-orta-ikonlar {
+        gap: 7px;
+    }
+
+    .sadece-ikon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .sadece-ikon .iletisim-ikon {
+        width: 18px;
+        height: 18px;
+    }
+
+    body.hakkimda-sayfasi-yeni .menu > .ana-sayfa {
+        font-size: 18px;
+        padding: 5px 9px;
+    }
+}
+
+body, body * {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+input, textarea, select, [contenteditable="true"] {
+    -webkit-user-select: text;
+    user-select: text;
+    -webkit-touch-callout: default;
+}
